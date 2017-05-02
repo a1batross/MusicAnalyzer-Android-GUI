@@ -15,7 +15,7 @@
   limitations under the License.
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/com.andrew.apollo"
+    xmlns:app="http://schemas.android.com/apk/res/ru.mtuci.musicanalyzer.apollo"
     android:layout_width="match_parent"
     android:layout_height="@dimen/item_normal_height"
     android:gravity="center_vertical"
@@ -23,7 +23,7 @@
     android:paddingLeft="@dimen/list_preferred_item_padding"
     android:paddingRight="@dimen/list_preferred_item_padding" >
 
-    <com.andrew.apollo.widgets.theme.ThemeableTextView
+    <ru.mtuci.musicanalyzer.apollo.widgets.theme.ThemeableTextView
         android:id="@+id/line_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
         android:textStyle="bold"
         app:themeResource="line_one" />
 
-    <com.andrew.apollo.widgets.theme.ThemeableTextView
+    <ru.mtuci.musicanalyzer.apollo.widgets.theme.ThemeableTextView
         android:id="@+id/line_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
         android:textSize="@dimen/text_size_small"
         app:themeResource="line_two" />
 
-    <com.andrew.apollo.widgets.theme.ThemeableTextView
+    <ru.mtuci.musicanalyzer.apollo.widgets.theme.ThemeableTextView
         android:id="@+id/line_three"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
