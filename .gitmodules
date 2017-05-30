@@ -1,0 +1,3 @@
+[submodule "jni/MusicAnalyzer-Core"]
+	path = jni/MusicAnalyzer-Core
+	url = https://github.com/a1batross/MusicAnalyzer-Core
