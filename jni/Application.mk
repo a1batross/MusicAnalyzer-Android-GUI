@@ -17,13 +17,6 @@ CFLAGS_OPT_X86 := -mtune=atom -march=atom -mssse3 -mfpmath=sse -funroll-loops -p
 CFLAGS_HARDFP := -D_NDK_MATH_NO_SOFTFP=1 -mhard-float -mfloat-abi=hard -DLOAD_HARDFP -DSOFTFP_LINK
 APPLICATIONMK_PATH = $(call my-dir)
 
-MUSICANALYZER_CORE := $(APPLICATIONMK_PATH)/MusicAnalyzer-Core/
-DEPS_INCLUDE_PATH := $(APPLICATIONMK_PATH)/deps/include/ \
-	$(APPLICATIONMK_PATH)/deps/include/Qt \
-	$(APPLICATIONMK_PATH)/deps/include/QtCore \
-	$(APPLICATIONMK_PATH)/deps/include/gaia2 \
-	$(APPLICATIONMK_PATH)/deps/include/essentia
-DEPS_LIBRARY_PATH := $(APPLICATIONMK_PATH)/../libs/$(TARGET_ARCH_ABI)/
 
 APP_ABI := armeabi-v7a-hard
 # Use armeabi-v7a to disable hardfloat, armeabi to build armv5 xash3d
@@ -32,4 +25,4 @@ APP_ABI := armeabi-v7a-hard
 # ARMv6 and ARMv5 xash3d builds use softfp only and compatible only with softfp mods
 # Build both armeabi-v7a-hard and armeabi-v7a supported only for mods, not for engine
 
-APP_MODULES := ma_core
+APP_MODULES := avcodec avformat avresample avutil essentia gaia2 QtCore ma_core
